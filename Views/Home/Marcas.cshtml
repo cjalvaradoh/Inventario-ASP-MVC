@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Marcas";
+}
+
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <h1 class="text-center">Marcas</h1>
+        </div>
+    </header>
+
+    <main class="my-4">
+        <div class="container">
+            <section>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2>Nuestras Marcas</h2>
+                    <button class="btn btn-primary" type="button" onclick="window.location.href='/Home/AgregarMarca'">Agregar Marca</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>País de Origen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>DELL</td>
+                                <td>Estados Unidos</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Microsoft</td>
+                                <td>Estados Unidos</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Samsung</td>
+                                <td>Corea del Sur</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>SAP</td>
+                                <td>Alemania</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Accenture</td>
+                                <td>Dublín, Irlanda</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Sistema de Inventario</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
