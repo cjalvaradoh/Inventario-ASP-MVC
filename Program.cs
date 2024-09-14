@@ -1,4 +1,3 @@
-using Inventario.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inventario
@@ -8,10 +7,12 @@ namespace Inventario
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("ProductsDb"));
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseInMemoryDatabase("InMemoryDb"));
+
 
             var app = builder.Build();
 

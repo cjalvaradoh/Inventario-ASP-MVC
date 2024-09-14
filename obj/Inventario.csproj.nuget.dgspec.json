@@ -11,7 +11,7 @@
         "projectName": "Inventario",
         "projectPath": "C:\\Users\\Ces\\source\\repos\\inventario\\Inventario.csproj",
         "packagesPath": "C:\\Users\\Ces\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ces\\source\\repos\\Inventario\\obj\\",
+        "outputPath": "C:\\Users\\Ces\\source\\repos\\inventario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,16 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
